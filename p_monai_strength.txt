@@ -1,0 +1,82 @@
+Arquivo: p_monai.bin
+Métrica de força: Life + D1 + D2
+
+Mais fortes (geral):
+- 411: EMP-Bomb (score=18164)
+- 410: EMP-Bomb (score=18124)
+- 263: 불꽂공격 (score=12140)
+- 355: Yeti (score=11728)
+- 254: 활활 (score=11364)
+- 249: 불나오는구녕(A) (score=11185)
+- 262: 활활 (score=10920)
+- 302: 불나오는구녕(A) (score=10904)
+- 412: 활활 (score=10798)
+- 252: 레이저허들 (score=10711)
+
+Mais fracos (geral):
+- 131: 격벽(부서짐4단계-종말) (score=1)
+- 197: 격벽(부서짐4단계-종말) (score=1)
+- 244: 격벽(부서짐4단계-종말) (score=1)
+- 81: 정예아이템통(부활) (score=3)
+- 82: 빈아이템통 (score=3)
+- 83: 아이템통 (score=3)
+- 84: 빅아이템통 (score=3)
+- 85: 빅아이템통(부활) (score=3)
+- 86: 정예아이템통 (score=3)
+- 94: 럭키박스 (score=3)
+
+Categoria: Elite
+  Mais fortes:
+  - 411: EMP-Bomb (score=18164)
+  - 410: EMP-Bomb (score=18124)
+  - 263: 불꽂공격 (score=12140)
+  - 355: Yeti (score=11728)
+  - 254: 활활 (score=11364)
+  - 249: 불나오는구녕(A) (score=11185)
+  - 262: 활활 (score=10920)
+  - 302: 불나오는구녕(A) (score=10904)
+  - 412: 활활 (score=10798)
+  - 252: 레이저허들 (score=10711)
+  Mais fracos:
+  - 197: 격벽(부서짐4단계-종말) (score=1)
+  - 244: 격벽(부서짐4단계-종말) (score=1)
+  - 256: 더미(길막이로쓰는몹) (score=3)
+  - 270: 럭키박스 (score=3)
+  - 304: 스페셜럭키박스 (score=3)
+  - 321: 스페셜럭키박스 (score=3)
+  - 395: 럭키박스2 (score=3)
+  - 409: 럭키박스2 (score=3)
+  - 423: 럭키박스2 (score=3)
+  - 801: Boza (score=6)
+
+Categoria: Evento
+  Mais fortes:
+  - 68: Commander-XT (score=3050)
+  - 69: 눈사람클로스(레벨16) (score=2908)
+  Mais fracos:
+  - 69: 눈사람클로스(레벨16) (score=2908)
+  - 68: Commander-XT (score=3050)
+
+Categoria: Guerra de base
+  Mais fortes:
+  - 118: 불나오는구녕(B) (score=10600)
+  - 147: 활활 (score=10598)
+  - 117: 불나오는구녕(A) (score=10548)
+  - 141: 활활 (score=10532)
+  - 136: 불나오는구녕(A) (score=10446)
+  - 280: 불나오는구녕(A) (score=10441)
+  - 213: 활활 (score=10372)
+  - 120: 레이저허들 (score=10274)
+  - 139: 레이저허들 (score=10268)
+  - 124: 동수 (score=10200)
+  Mais fracos:
+  - 131: 격벽(부서짐4단계-종말) (score=1)
+  - 81: 정예아이템통(부활) (score=3)
+  - 82: 빈아이템통 (score=3)
+  - 83: 아이템통 (score=3)
+  - 84: 빅아이템통 (score=3)
+  - 85: 빅아이템통(부활) (score=3)
+  - 86: 정예아이템통 (score=3)
+  - 94: 럭키박스 (score=3)
+  - 101: 스페셜럭키박스 (score=3)
+  - 143: 더미(길막이로쓰는몹) (score=3)
