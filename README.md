@@ -7,54 +7,46 @@ Os scripts abaixo fazem a conversão nos dois sentidos, mantendo a mesma criptog
 
 - Python 3
 
-## Descriptografar
+## Extração (modo recomendado)
 
-Por padrão, o script gera texto automaticamente detectando BOM (UTF-16/UTF-8) e usando `cp949`
-como fallback:
+O arquivo possui um cabeçalho de 8 bytes antes do texto. Use o script de extração para
+remover o cabeçalho e gerar um `.txt` legível:
 
 ```bash
-python decrypt_p_monai.py p_monai.bin p_monai.txt
+python extract_p_monai.py p_monai.bin p_monai.txt
 ```
 
-Se quiser gravar o resultado como bytes crus (sem decodificar texto):
+Se precisar alterar codificação ou erros:
 
 ```bash
-python decrypt_p_monai.py p_monai.bin p_monai.txt --binary
+python extract_p_monai.py p_monai.bin p_monai.txt --encoding cp949 --errors replace
 ```
 
-Também é possível ajustar a codificação e o tratamento de erros:
+## Reempacotar (modo recomendado)
+
+Depois de editar o texto, reempacote o arquivo usando o mesmo cabeçalho:
 
 ```bash
-python decrypt_p_monai.py p_monai.bin p_monai.txt --encoding cp949 --errors replace
+python pack_p_monai.py p_monai.txt p_monai.bin
 ```
 
-Para validar contra um arquivo de referência:
+Você também pode apontar para um `.bin` de referência para copiar o cabeçalho:
 
 ```bash
-python decrypt_p_monai.py p_monai.bin p_monai.txt --compare caminho/para/referencia.bin
+python pack_p_monai.py p_monai.txt p_monai.bin --header-from p_monai.bin
 ```
 
-## Criptografar
+## Scripts básicos (binário completo)
 
-Se você editou o arquivo como texto, use a mesma codificação:
-
-```bash
-python encrypt_p_monai.py p_monai.txt p_monai.bin --encoding cp949
-```
-
-Se o arquivo de entrada for binário (bytes crus), use:
+Se você quiser trabalhar com o arquivo inteiro (sem remover cabeçalho), use os scripts
+`decrypt_p_monai.py` e `encrypt_p_monai.py`:
 
 ```bash
-python encrypt_p_monai.py p_monai.txt p_monai.bin --binary
-```
-
-Para garantir que a criptografia bate exatamente com um `.bin` original:
-
-```bash
-python encrypt_p_monai.py p_monai.txt p_monai.bin --compare caminho/para/p_monai.bin
+python decrypt_p_monai.py p_monai.bin p_monai_full.bin --binary
+python encrypt_p_monai.py p_monai_full.bin p_monai.bin --binary
 ```
 
 ## Observações
 
-- Esse arquivo costuma conter bytes que não são válidos em UTF-8; por isso há fallback para `cp949`.
-- Use `--binary` se você precisa manter 100% dos bytes sem nenhuma mudança.
+- A codificação mais comum do texto é `cp949`.
+- Se você precisa preservar todos os bytes sem mudanças, use os modos binários.
